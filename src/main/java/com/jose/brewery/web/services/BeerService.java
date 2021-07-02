@@ -11,4 +11,20 @@ public interface BeerService {
 	 */
 	BeerDto getBeerById(UUID beerId);
 
+	/**
+	 * @param beerDto
+	 * @return
+	 */
+	BeerDto saveBeer(BeerDto beerDto);
+
+	/**
+	 * @param beerDto
+	 */
+	void updateBeer(BeerDto beerDto);
+
+	/**
+	 * @param beerId
+	 */
+	void deleteBeer(UUID beerId);
+
 }
